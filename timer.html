@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="timer.css">
+    <script src="jquery-3.6.0.min.js"></script>
+    <!--<script src="/bootstrap/js/bootstrap.min.js"></script>-->
+    <title>タイマー</title>
+  </head>
+  <body id="body">
+    <div class="container">
+    <div class="display">
+        <h1 class="disp" id="hdis">00</h1><h1>:</h1><h1 class="disp" id="mdis">00</h1><h1>:</h1><h1 class="disp" id="sdis">00</h1>        
+    </div>
+    <div class="setting" id="controls">
+        <div class="hourset setrange">
+          <span class="setlet">時間</span>
+          <input id="hset" name="hours" type="range" min="0" max="23" value="0"><input type="text" class="settext" id="hsett" value="00">
+        </div>
+        <div class="minset setrange">
+          <span class="setlet">分</span>
+          <input id="mset" name="mins" type="range" min="0" max="59" value="0"><input type="text" class="settext" id="msett" value="00">
+        </div>
+        <div class="secset setrange">
+          <span class="setlet">秒</span>
+          <input id="sset" name="secs" type="range" min="0" max="59" value="0"><input type="text" class="settext" id="ssett" value="00">
+        </div>
+       
+    </div>
+
+    <div class="button">
+    <input type="button" id="start_button" class="btn" value="start" onclick="start()">
+    <input type="button" id="stop_button" class="btn" value="stop" onclick="stop()" disabled>
+    <input type="button" id="reset_button" class="btn" value="reset" onclick="reset()"><br>
+    </div>
+
+    <audio src="chime.mp3" loop id="audio">現環境では終了時にアラームが鳴りません</audio>
+
+      <script src="timer.js"></script>
+    </div>
+  </body>
+</html>
