@@ -125,7 +125,7 @@ if (allsec-1 <= 10) {
 }
 if(dt.getTime() >= endDt.getTime()){
     playaudio();
-    /*start_notification();*/
+    start_notification();
     clearInterval(count_down);
     mdis.innerHTML=minute;
     sdis.innerHTML="00";
