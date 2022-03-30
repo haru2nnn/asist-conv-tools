@@ -2,6 +2,10 @@ body{
     min-width: 500px;
     height: 100vh;
     background: linear-gradient(skyblue,white);
+    font-family: 'Kiwi Maru', serif;
+}
+.stitle{
+  color: #228c66;
 }
 
 .title{
@@ -10,7 +14,9 @@ body{
     margin: 40px 20px;
     color: #049b8e;
 }
-
+.button09{
+  margin: 30px;
+}
 .button09 a {
     display: flex;
     justify-content: space-between;
@@ -24,6 +30,7 @@ body{
     font-weight: 700;
     background-color: #e0ffc1;
     transition: 0.3s;
+    text-decoration: none;
   }
   
   .button09 a::before {

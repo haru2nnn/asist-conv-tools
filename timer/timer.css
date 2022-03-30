@@ -1,0 +1,92 @@
+body{
+    min-width: 500px;
+    height: 98vh;
+    margin: 0;
+    font-family: 'Kiwi Maru', serif;
+}
+input{
+    font-family: 'Kiwi Maru', serif;
+}
+
+.display{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    justify-content: center;
+}
+.setting{
+    margin: 15px;
+}
+.button{
+    margin: 15px;
+}
+.button .btn{
+    margin: 10px 15px;
+}
+.container h1{
+    font-weight: 800;
+    font-size: 250px;
+    color: cadetblue;
+    margin: 65px 10px;
+}
+.container{
+    width: 100%;
+    text-align: center;
+}
+
+.btn{
+    width: 150px;
+    height: 80px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#start_button{
+    color: #009944;
+    background-color: #bee0c2;
+}
+#stop_button{
+    color: #ea5500;
+    background-color: #f19ca7;
+}
+#reset_button{
+    color: rgb(20, 81, 212);
+    background-color: #b2cbe4;
+}
+
+.btn[disabled]{
+    background:#b4b4b4!important;
+    cursor:not-allowed; /* 禁止カーソル */
+}
+
+input[type="button"]{
+    border-radius: 5px;
+}
+
+.setrange input[type="range" i]{
+    width: 50%;
+    max-width: 1000px;
+    height: 60px;
+}
+.setrange input[type="text" i]{
+    width: 150px;
+    max-width: 700px;
+    height: 40px;
+    text-align: center;
+}
+.setrange{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    gap: 10px;
+}
+.setlet{
+    width: 80px;
+
+}
+.settext{
+    font-size: 120%;
+}
+

@@ -1,0 +1,48 @@
+body{
+    min-width: 500px;
+    font-family: 'Kiwi Maru', serif;
+}
+input{
+    font-family: 'Kiwi Maru', serif;
+}
+
+.disp{
+    text-align: center;
+    font-weight: 800;
+    font-size: 200px;
+    color: teal;
+    margin: 80px 10px;
+}
+
+.countbtn{
+    width: 100%;
+    text-align: center;
+    touch-action: manipulation
+}
+
+.ctbtn{
+    justify-content: center;
+    width: 300px;
+    height: 220px;
+    margin: 30px;
+    font-weight: bold;
+    font-size: 40px;
+    background-color: #bee0ce;
+    color: #00a698;
+}
+#ctup{
+    background-color:#a1d8e6;
+    color: #26499d;    
+}
+#ctdw{
+    color: indianred;
+    background: #f19ca7;
+}
+.ctbtn[disabled]{
+    background:#b4b4b4!important;
+    cursor:not-allowed; /* 禁止カーソル */
+}
+
+input[type="button"]{
+    border-radius: 5px;
+}
