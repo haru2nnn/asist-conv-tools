@@ -125,7 +125,7 @@ if (allsec-1 <= 10) {
 }
 if(dt.getTime() >= endDt.getTime()){
     playaudio();
-    start_notification();
+    /*start_notification();*/
     clearInterval(count_down);
     mdis.innerHTML=minute;
     sdis.innerHTML="00";
@@ -162,6 +162,7 @@ function stop(){
     for(i=0;i<elements.length;i++){
         elements[i].style.color = "cadetblue";
     }
+    ontheway=false;
 }
 
 function reset(){
@@ -170,7 +171,9 @@ location.reload();
 
 //音楽を鳴らす
 function playaudio(){
-    document.getElementById('audio').play();
+   var audiofile = document.getElementById('audio')
+   audiofile.currentTime = 0;
+   audiofile.play();
 }
 //音楽を止める
 function stopaudio(){

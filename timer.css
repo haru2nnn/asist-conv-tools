@@ -30,9 +30,14 @@ body{
 }
 
 .btn{
-    color: mediumblue;
+    color: rgb(20, 81, 212);
     width: 100px;
     height: 55px;
+    font-size: 20px;
+}
+.btn[disabled]{
+    background:#b4b4b4;
+    cursor:not-allowed; /* 禁止カーソル */
 }
 
 .setrange input[type="range" i]{
